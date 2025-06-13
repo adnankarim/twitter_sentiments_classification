@@ -1,0 +1,202 @@
+2025-05-31 18:59:09,545 | INFO | train.csv loaded (14705 rows)
+2025-05-31 18:59:09,869 | INFO | valid.csv loaded (3152 rows)
+2025-05-31 18:59:10,212 | INFO | test.csv loaded (3151 rows)
+2025-05-31 18:59:10,277 | INFO | Tokenizer built: vocab=20000
+2025-05-31 18:59:10,336 | INFO | Loading GloVe from glove.6B.100d.txt
+2025-05-31 18:59:20,517 | INFO | GloVe coverage 11911 / 20000 (59.6%)
+2025-05-31 18:59:20,720 | INFO | TextCNN(
+  (embedding): Embedding(20000, 100, padding_idx=0)
+  (convs): ModuleList(
+    (0): Conv1d(100, 100, kernel_size=(3,), stride=(1,))
+    (1): Conv1d(100, 100, kernel_size=(4,), stride=(1,))
+    (2): Conv1d(100, 100, kernel_size=(5,), stride=(1,))
+  )
+  (dropout): Dropout(p=0.5, inplace=False)
+  (fc): Linear(in_features=300, out_features=3, bias=True)
+)
+2025-05-31 18:59:23,620 | INFO | Epoch 01 | train_loss 0.9240  train_F1 0.5496 | val_loss 0.7543  val_F1 0.6700 | time 1.5s
+2025-05-31 18:59:24,750 | INFO | Epoch 02 | train_loss 0.7024  train_F1 0.7041 | val_loss 0.6885  val_F1 0.7126 | time 1.1s
+2025-05-31 18:59:25,882 | INFO | Epoch 03 | train_loss 0.5991  train_F1 0.7614 | val_loss 0.6647  val_F1 0.7250 | time 1.1s
+2025-05-31 18:59:26,995 | INFO | Epoch 04 | train_loss 0.5105  train_F1 0.8038 | val_loss 0.6711  val_F1 0.7283 | time 1.1s
+2025-05-31 18:59:28,137 | INFO | Epoch 05 | train_loss 0.4197  train_F1 0.8460 | val_loss 0.7214  val_F1 0.7185 | time 1.1s
+2025-05-31 18:59:29,299 | INFO | Epoch 06 | train_loss 0.3360  train_F1 0.8878 | val_loss 0.7544  val_F1 0.7196 | time 1.2s
+2025-05-31 18:59:30,457 | INFO | Epoch 07 | train_loss 0.2550  train_F1 0.9161 | val_loss 0.7984  val_F1 0.7217 | time 1.2s
+2025-05-31 18:59:31,634 | INFO | Epoch 08 | train_loss 0.2003  train_F1 0.9381 | val_loss 0.8822  val_F1 0.7090 | time 1.2s
+2025-05-31 18:59:32,794 | INFO | Epoch 09 | train_loss 0.1565  train_F1 0.9516 | val_loss 0.9464  val_F1 0.7065 | time 1.2s
+2025-05-31 18:59:33,940 | INFO | Epoch 10 | train_loss 0.1258  train_F1 0.9623 | val_loss 1.0154  val_F1 0.6977 | time 1.1s
+2025-05-31 18:59:35,102 | INFO | Epoch 11 | train_loss 0.1006  train_F1 0.9695 | val_loss 1.0824  val_F1 0.7009 | time 1.2s
+2025-05-31 18:59:36,243 | INFO | Epoch 12 | train_loss 0.0849  train_F1 0.9755 | val_loss 1.1458  val_F1 0.6925 | time 1.1s
+2025-05-31 18:59:37,404 | INFO | Epoch 13 | train_loss 0.0710  train_F1 0.9790 | val_loss 1.2114  val_F1 0.6881 | time 1.2s
+2025-05-31 18:59:38,548 | INFO | Epoch 14 | train_loss 0.0617  train_F1 0.9811 | val_loss 1.2936  val_F1 0.6920 | time 1.1s
+2025-05-31 18:59:39,694 | INFO | Epoch 15 | train_loss 0.0534  train_F1 0.9841 | val_loss 1.3267  val_F1 0.6873 | time 1.1s
+2025-05-31 18:59:40,856 | INFO | Epoch 16 | train_loss 0.0473  train_F1 0.9862 | val_loss 1.3875  val_F1 0.6892 | time 1.2s
+2025-05-31 18:59:42,016 | INFO | Epoch 17 | train_loss 0.0410  train_F1 0.9894 | val_loss 1.4356  val_F1 0.6824 | time 1.2s
+2025-05-31 18:59:43,174 | INFO | Epoch 18 | train_loss 0.0398  train_F1 0.9895 | val_loss 1.4519  val_F1 0.6859 | time 1.2s
+2025-05-31 18:59:44,319 | INFO | Epoch 19 | train_loss 0.0363  train_F1 0.9895 | val_loss 1.5352  val_F1 0.6817 | time 1.1s
+2025-05-31 18:59:45,496 | INFO | Epoch 20 | train_loss 0.0333  train_F1 0.9912 | val_loss 1.6003  val_F1 0.6833 | time 1.2s
+2025-05-31 18:59:45,687 | INFO | 
+=== Validation ===  Macro-F1 0.6856
+2025-05-31 18:59:45,687 | INFO | 
+=== Test ===  Macro-F1 0.6746
+2025-05-31 18:59:45,707 | INFO | 
+              precision    recall  f1-score   support
+
+         neg       0.74      0.65      0.69      1050
+         neu       0.59      0.59      0.59      1050
+         pos       0.70      0.79      0.74      1051
+
+    accuracy                           0.68      3151
+   macro avg       0.68      0.68      0.67      3151
+weighted avg       0.68      0.68      0.67      3151
+
+2025-05-31 18:59:45,709 | INFO | Confusion matrix:
+[[681 269 100]
+ [175 621 254]
+ [ 66 158 827]]
+2025-05-31 18:59:45,709 | INFO | Artifacts saved in baseline_cnn
+2025-05-31 19:53:27,893 | INFO | SentenceCNN(
+  (conv): Conv1d(1, 512, kernel_size=(1,), stride=(1,))
+  (act): ReLU()
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (drop): Dropout(p=0.5, inplace=False)
+  (fc): Linear(in_features=512, out_features=3, bias=True)
+)
+2025-05-31 19:54:01,895 | INFO | SentenceCNN(
+  (conv): Conv1d(1, 512, kernel_size=(1,), stride=(1,))
+  (act): ReLU()
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (drop): Dropout(p=0.5, inplace=False)
+  (fc): Linear(in_features=512, out_features=3, bias=True)
+)
+2025-05-31 19:54:35,971 | INFO | SentenceCNN(
+  (conv): Conv1d(1, 384, kernel_size=(1,), stride=(1,))
+  (act): ReLU()
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (drop): Dropout(p=0.5, inplace=False)
+  (fc): Linear(in_features=384, out_features=3, bias=True)
+)
+2025-05-31 20:02:49,693 | INFO | SentenceCNN(
+  (conv): Conv1d(1, 512, kernel_size=(1,), stride=(1,))
+  (act): ReLU()
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (drop): Dropout(p=0.5, inplace=False)
+  (fc): Linear(in_features=512, out_features=3, bias=True)
+)
+2025-05-31 20:04:01,081 | INFO | SentenceCNN(
+  (conv): Conv1d(1, 512, kernel_size=(1,), stride=(1,))
+  (act): ReLU()
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (drop): Dropout(p=0.5, inplace=False)
+  (fc): Linear(in_features=512, out_features=3, bias=True)
+)
+2025-05-31 20:04:04,021 | INFO | Epoch 01 | train_loss 1.1166  train_F1 0.3332 | val_loss 1.1016  val_F1 0.1660 | time 1.3s
+2025-05-31 20:04:05,020 | INFO | Epoch 02 | train_loss 1.0989  train_F1 0.3380 | val_loss 1.0853  val_F1 0.3630 | time 1.0s
+2025-05-31 20:04:05,970 | INFO | Epoch 03 | train_loss 1.0919  train_F1 0.3563 | val_loss 1.0829  val_F1 0.4010 | time 1.0s
+2025-05-31 20:04:06,920 | INFO | Epoch 04 | train_loss 1.0907  train_F1 0.3554 | val_loss 1.0844  val_F1 0.3302 | time 1.0s
+2025-05-31 20:04:07,870 | INFO | Epoch 05 | train_loss 1.0889  train_F1 0.3524 | val_loss 1.0837  val_F1 0.3124 | time 0.9s
+2025-05-31 20:04:08,820 | INFO | Epoch 06 | train_loss 1.0850  train_F1 0.3750 | val_loss 1.0816  val_F1 0.3212 | time 1.0s
+2025-05-31 20:04:08,820 | INFO | Early stopping.
+2025-05-31 20:04:09,016 | INFO | 
+=== Validation ===  Macro-F1 0.3234
+2025-05-31 20:04:09,016 | INFO | 
+=== Test ===  Macro-F1 0.3371
+2025-05-31 20:04:09,032 | INFO | 
+              precision    recall  f1-score   support
+
+         neg       0.64      0.02      0.04      1050
+         neu       0.40      0.70      0.51      1051
+         pos       0.42      0.51      0.46      1051
+
+    accuracy                           0.41      3152
+   macro avg       0.49      0.41      0.34      3152
+weighted avg       0.49      0.41      0.34      3152
+
+2025-05-31 20:04:09,040 | INFO | Confusion matrix:
+[[ 21 586 443]
+ [  5 735 311]
+ [  7 503 541]]
+2025-05-31 20:04:33,514 | INFO | SentenceCNN(
+  (conv): Conv1d(1, 512, kernel_size=(1,), stride=(1,))
+  (act): ReLU()
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (drop): Dropout(p=0.5, inplace=False)
+  (fc): Linear(in_features=512, out_features=3, bias=True)
+)
+2025-05-31 20:04:36,448 | INFO | Epoch 01 | train_loss 1.1170  train_F1 0.3269 | val_loss 1.0904  val_F1 0.3747 | time 1.3s
+2025-05-31 20:04:37,387 | INFO | Epoch 02 | train_loss 1.1010  train_F1 0.3371 | val_loss 1.0861  val_F1 0.4040 | time 0.9s
+2025-05-31 20:04:38,353 | INFO | Epoch 03 | train_loss 1.0944  train_F1 0.3421 | val_loss 1.0879  val_F1 0.2793 | time 1.0s
+2025-05-31 20:04:39,286 | INFO | Epoch 04 | train_loss 1.0905  train_F1 0.3634 | val_loss 1.0854  val_F1 0.2965 | time 0.9s
+2025-05-31 20:04:40,215 | INFO | Epoch 05 | train_loss 1.0878  train_F1 0.3583 | val_loss 1.0812  val_F1 0.3990 | time 0.9s
+2025-05-31 20:04:40,215 | INFO | Early stopping.
+2025-05-31 20:04:40,416 | INFO | 
+=== Validation ===  Macro-F1 0.4019
+2025-05-31 20:04:40,416 | INFO | 
+=== Test ===  Macro-F1 0.4241
+2025-05-31 20:04:40,416 | INFO | 
+              precision    recall  f1-score   support
+
+         neg       0.39      0.41      0.40      1050
+         neu       0.46      0.42      0.43      1051
+         pos       0.43      0.44      0.43      1051
+
+    accuracy                           0.42      3152
+   macro avg       0.43      0.42      0.42      3152
+weighted avg       0.43      0.42      0.42      3152
+
+2025-05-31 20:04:40,430 | INFO | Confusion matrix:
+[[434 270 346]
+ [334 437 280]
+ [334 252 465]]
+2025-05-31 20:04:48,878 | INFO | SentenceCNN(
+  (conv): Conv1d(1, 512, kernel_size=(1,), stride=(1,))
+  (act): ReLU()
+  (pool): AdaptiveMaxPool1d(output_size=1)
+  (drop): Dropout(p=0.5, inplace=False)
+  (fc): Linear(in_features=512, out_features=3, bias=True)
+)
+2025-05-31 20:04:51,787 | INFO | Epoch 01 | train_loss 1.1177  train_F1 0.3254 | val_loss 1.0913  val_F1 0.2929 | time 1.2s
+2025-05-31 20:04:52,718 | INFO | Epoch 02 | train_loss 1.1009  train_F1 0.3454 | val_loss 1.0913  val_F1 0.2613 | time 0.9s
+2025-05-31 20:04:53,649 | INFO | Epoch 03 | train_loss 1.0923  train_F1 0.3528 | val_loss 1.0895  val_F1 0.3051 | time 0.9s
+2025-05-31 20:04:54,580 | INFO | Epoch 04 | train_loss 1.0876  train_F1 0.3676 | val_loss 1.0825  val_F1 0.3545 | time 0.9s
+2025-05-31 20:04:55,519 | INFO | Epoch 05 | train_loss 1.0880  train_F1 0.3650 | val_loss 1.0848  val_F1 0.3099 | time 0.9s
+2025-05-31 20:04:56,450 | INFO | Epoch 06 | train_loss 1.0882  train_F1 0.3536 | val_loss 1.0823  val_F1 0.4092 | time 0.9s
+2025-05-31 20:04:57,373 | INFO | Epoch 07 | train_loss 1.0866  train_F1 0.3600 | val_loss 1.0850  val_F1 0.3103 | time 0.9s
+2025-05-31 20:04:58,312 | INFO | Epoch 08 | train_loss 1.0850  train_F1 0.3677 | val_loss 1.0851  val_F1 0.3099 | time 0.9s
+2025-05-31 20:04:59,236 | INFO | Epoch 09 | train_loss 1.0851  train_F1 0.3687 | val_loss 1.0797  val_F1 0.4069 | time 0.9s
+2025-05-31 20:05:00,164 | INFO | Epoch 10 | train_loss 1.0849  train_F1 0.3661 | val_loss 1.0794  val_F1 0.3708 | time 0.9s
+2025-05-31 20:05:01,106 | INFO | Epoch 11 | train_loss 1.0836  train_F1 0.3819 | val_loss 1.0793  val_F1 0.3904 | time 0.9s
+2025-05-31 20:05:02,030 | INFO | Epoch 12 | train_loss 1.0817  train_F1 0.3784 | val_loss 1.0797  val_F1 0.3934 | time 0.9s
+2025-05-31 20:05:02,971 | INFO | Epoch 13 | train_loss 1.0811  train_F1 0.3817 | val_loss 1.0776  val_F1 0.3941 | time 0.9s
+2025-05-31 20:05:03,921 | INFO | Epoch 14 | train_loss 1.0806  train_F1 0.3762 | val_loss 1.0805  val_F1 0.3713 | time 0.9s
+2025-05-31 20:05:04,871 | INFO | Epoch 15 | train_loss 1.0829  train_F1 0.3760 | val_loss 1.0809  val_F1 0.3959 | time 1.0s
+2025-05-31 20:05:05,804 | INFO | Epoch 16 | train_loss 1.0819  train_F1 0.3684 | val_loss 1.0796  val_F1 0.3712 | time 0.9s
+2025-05-31 20:05:06,754 | INFO | Epoch 17 | train_loss 1.0812  train_F1 0.3749 | val_loss 1.0774  val_F1 0.4029 | time 1.0s
+2025-05-31 20:05:07,704 | INFO | Epoch 18 | train_loss 1.0797  train_F1 0.3836 | val_loss 1.0769  val_F1 0.3989 | time 0.9s
+2025-05-31 20:05:08,637 | INFO | Epoch 19 | train_loss 1.0803  train_F1 0.3849 | val_loss 1.0779  val_F1 0.3702 | time 0.9s
+2025-05-31 20:05:09,587 | INFO | Epoch 20 | train_loss 1.0798  train_F1 0.3947 | val_loss 1.0797  val_F1 0.3518 | time 0.9s
+2025-05-31 20:05:10,538 | INFO | Epoch 21 | train_loss 1.0803  train_F1 0.3855 | val_loss 1.0772  val_F1 0.3916 | time 1.0s
+2025-05-31 20:05:11,488 | INFO | Epoch 22 | train_loss 1.0788  train_F1 0.3852 | val_loss 1.0764  val_F1 0.4003 | time 1.0s
+2025-05-31 20:05:12,444 | INFO | Epoch 23 | train_loss 1.0802  train_F1 0.3915 | val_loss 1.0764  val_F1 0.4066 | time 1.0s
+2025-05-31 20:05:13,405 | INFO | Epoch 24 | train_loss 1.0808  train_F1 0.3783 | val_loss 1.0770  val_F1 0.3671 | time 1.0s
+2025-05-31 20:05:14,371 | INFO | Epoch 25 | train_loss 1.0787  train_F1 0.3850 | val_loss 1.0783  val_F1 0.3398 | time 1.0s
+2025-05-31 20:05:15,319 | INFO | Epoch 26 | train_loss 1.0783  train_F1 0.3887 | val_loss 1.0779  val_F1 0.3559 | time 0.9s
+2025-05-31 20:05:15,319 | INFO | Early stopping.
+2025-05-31 20:05:15,555 | INFO | 
+=== Validation ===  Macro-F1 0.3593
+2025-05-31 20:05:15,558 | INFO | 
+=== Test ===  Macro-F1 0.3663
+2025-05-31 20:05:15,569 | INFO | 
+              precision    recall  f1-score   support
+
+         neg       0.47      0.08      0.14      1050
+         neu       0.40      0.69      0.51      1051
+         pos       0.42      0.47      0.45      1051
+
+    accuracy                           0.42      3152
+   macro avg       0.43      0.42      0.37      3152
+weighted avg       0.43      0.42      0.37      3152
+
+2025-05-31 20:05:15,571 | INFO | Confusion matrix:
+[[ 89 562 399]
+ [ 53 727 271]
+ [ 46 512 493]]

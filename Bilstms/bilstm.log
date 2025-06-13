@@ -1,0 +1,58 @@
+2025-05-31 20:21:53,965 | INFO | SentenceBiLSTM(
+  (lstm): LSTM(1024, 192, batch_first=True, bidirectional=True)
+  (act): ReLU()
+  (drop): Dropout(p=0.5, inplace=False)
+  (fc): Linear(in_features=384, out_features=3, bias=True)
+)
+2025-05-31 20:21:56,612 | INFO | Epoch 01 | train_loss 0.8246  train_F1 0.5961 | val_loss 0.6418  val_F1 0.7099 | time 1.0s
+2025-05-31 20:21:57,456 | INFO | Epoch 02 | train_loss 0.6403  train_F1 0.7211 | val_loss 0.6179  val_F1 0.7301 | time 0.8s
+2025-05-31 20:21:58,365 | INFO | Epoch 03 | train_loss 0.6181  train_F1 0.7323 | val_loss 0.6150  val_F1 0.7267 | time 0.9s
+2025-05-31 20:21:59,277 | INFO | Epoch 04 | train_loss 0.6063  train_F1 0.7387 | val_loss 0.6176  val_F1 0.7222 | time 0.9s
+2025-05-31 20:22:00,138 | INFO | Epoch 05 | train_loss 0.5972  train_F1 0.7414 | val_loss 0.6068  val_F1 0.7292 | time 0.9s
+2025-05-31 20:22:01,062 | INFO | Epoch 06 | train_loss 0.5887  train_F1 0.7474 | val_loss 0.6066  val_F1 0.7265 | time 0.9s
+2025-05-31 20:22:01,986 | INFO | Epoch 07 | train_loss 0.5824  train_F1 0.7472 | val_loss 0.6022  val_F1 0.7321 | time 0.9s
+2025-05-31 20:22:02,898 | INFO | Epoch 08 | train_loss 0.5764  train_F1 0.7501 | val_loss 0.5994  val_F1 0.7342 | time 0.9s
+2025-05-31 20:22:03,823 | INFO | Epoch 09 | train_loss 0.5714  train_F1 0.7569 | val_loss 0.6038  val_F1 0.7266 | time 0.9s
+2025-05-31 20:22:04,747 | INFO | Epoch 10 | train_loss 0.5656  train_F1 0.7584 | val_loss 0.5980  val_F1 0.7315 | time 0.9s
+2025-05-31 20:22:05,644 | INFO | Epoch 11 | train_loss 0.5580  train_F1 0.7609 | val_loss 0.5989  val_F1 0.7361 | time 0.9s
+2025-05-31 20:22:06,601 | INFO | Epoch 12 | train_loss 0.5542  train_F1 0.7619 | val_loss 0.5966  val_F1 0.7382 | time 0.9s
+2025-05-31 20:22:07,508 | INFO | Epoch 13 | train_loss 0.5500  train_F1 0.7652 | val_loss 0.6006  val_F1 0.7228 | time 0.9s
+2025-05-31 20:22:08,416 | INFO | Epoch 14 | train_loss 0.5446  train_F1 0.7650 | val_loss 0.5982  val_F1 0.7272 | time 0.9s
+2025-05-31 20:22:09,313 | INFO | Epoch 15 | train_loss 0.5398  train_F1 0.7668 | val_loss 0.5984  val_F1 0.7246 | time 0.9s
+2025-05-31 20:22:10,221 | INFO | Epoch 16 | train_loss 0.5375  train_F1 0.7673 | val_loss 0.5982  val_F1 0.7275 | time 0.9s
+2025-05-31 20:22:11,114 | INFO | Epoch 17 | train_loss 0.5297  train_F1 0.7724 | val_loss 0.5986  val_F1 0.7313 | time 0.9s
+2025-05-31 20:22:12,027 | INFO | Epoch 18 | train_loss 0.5273  train_F1 0.7740 | val_loss 0.5979  val_F1 0.7270 | time 0.9s
+2025-05-31 20:22:12,918 | INFO | Epoch 19 | train_loss 0.5232  train_F1 0.7740 | val_loss 0.5990  val_F1 0.7332 | time 0.9s
+2025-05-31 20:22:13,827 | INFO | Epoch 20 | train_loss 0.5143  train_F1 0.7796 | val_loss 0.6000  val_F1 0.7312 | time 0.9s
+2025-05-31 20:22:14,729 | INFO | Epoch 21 | train_loss 0.5073  train_F1 0.7854 | val_loss 0.6023  val_F1 0.7352 | time 0.9s
+2025-05-31 20:22:15,617 | INFO | Epoch 22 | train_loss 0.5049  train_F1 0.7849 | val_loss 0.6016  val_F1 0.7281 | time 0.9s
+2025-05-31 20:22:16,524 | INFO | Epoch 23 | train_loss 0.4970  train_F1 0.7927 | val_loss 0.6030  val_F1 0.7347 | time 0.9s
+2025-05-31 20:22:17,433 | INFO | Epoch 24 | train_loss 0.4928  train_F1 0.7950 | val_loss 0.6037  val_F1 0.7304 | time 0.9s
+2025-05-31 20:22:18,329 | INFO | Epoch 25 | train_loss 0.4852  train_F1 0.7956 | val_loss 0.6084  val_F1 0.7320 | time 0.9s
+2025-05-31 20:22:19,237 | INFO | Epoch 26 | train_loss 0.4788  train_F1 0.8002 | val_loss 0.6020  val_F1 0.7277 | time 0.9s
+2025-05-31 20:22:20,134 | INFO | Epoch 27 | train_loss 0.4739  train_F1 0.8044 | val_loss 0.6120  val_F1 0.7321 | time 0.9s
+2025-05-31 20:22:21,063 | INFO | Epoch 28 | train_loss 0.4641  train_F1 0.8082 | val_loss 0.6034  val_F1 0.7351 | time 0.9s
+2025-05-31 20:22:21,983 | INFO | Epoch 29 | train_loss 0.4575  train_F1 0.8160 | val_loss 0.6126  val_F1 0.7262 | time 0.9s
+2025-05-31 20:22:22,893 | INFO | Epoch 30 | train_loss 0.4511  train_F1 0.8163 | val_loss 0.6130  val_F1 0.7327 | time 0.9s
+2025-05-31 20:22:23,783 | INFO | Epoch 31 | train_loss 0.4427  train_F1 0.8240 | val_loss 0.6094  val_F1 0.7327 | time 0.9s
+2025-05-31 20:22:24,680 | INFO | Epoch 32 | train_loss 0.4364  train_F1 0.8243 | val_loss 0.6150  val_F1 0.7343 | time 0.9s
+2025-05-31 20:22:24,680 | INFO | Early stopping.
+2025-05-31 20:22:24,850 | INFO | 
+=== Validation ===  Macro-F1 0.7366
+2025-05-31 20:22:24,865 | INFO | 
+=== Test ===  Macro-F1 0.7431
+2025-05-31 20:22:24,874 | INFO | 
+              precision    recall  f1-score   support
+
+         neg       0.79      0.76      0.77      1050
+         neu       0.64      0.68      0.66      1051
+         pos       0.80      0.79      0.80      1051
+
+    accuracy                           0.74      3152
+   macro avg       0.74      0.74      0.74      3152
+weighted avg       0.74      0.74      0.74      3152
+
+2025-05-31 20:22:24,876 | INFO | Confusion matrix:
+[[798 214  38]
+ [174 710 167]
+ [ 40 180 831]]

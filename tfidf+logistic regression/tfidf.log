@@ -1,0 +1,47 @@
+2025-05-31 17:15:10,947 | INFO | train.csv loaded: 14705 rows
+2025-05-31 17:15:11,280 | INFO | valid.csv loaded: 3152 rows
+2025-05-31 17:15:11,660 | INFO | test.csv loaded: 3152 rows
+2025-05-31 17:15:11,660 | INFO | Starting 5-fold grid search …
+2025-05-31 17:15:21,574 | INFO | Best CV macro-F1 0.6958  |  params {'clf__C': 2, 'clf__penalty': 'l1', 'tfidf__ngram_range': (1, 2)}
+2025-05-31 17:15:21,574 | INFO | 
+=== Validation set ===
+2025-05-31 17:15:21,647 | INFO | Macro-F1 = 0.7212
+2025-05-31 17:15:21,647 | INFO | 
+              precision    recall  f1-score   support
+
+         neg       0.77      0.71      0.74      1051
+         neu       0.62      0.66      0.64      1051
+         pos       0.78      0.79      0.79      1050
+
+    accuracy                           0.72      3152
+   macro avg       0.72      0.72      0.72      3152
+weighted avg       0.72      0.72      0.72      3152
+
+2025-05-31 17:15:21,647 | INFO | 
+=== Test set ===
+2025-05-31 17:15:21,714 | INFO | Macro-F1 = 0.7071
+2025-05-31 17:15:21,735 | INFO | 
+              precision    recall  f1-score   support
+
+         neg       0.73      0.69      0.71      1050
+         neu       0.61      0.65      0.63      1051
+         pos       0.78      0.78      0.78      1051
+
+    accuracy                           0.71      3152
+   macro avg       0.71      0.71      0.71      3152
+weighted avg       0.71      0.71      0.71      3152
+
+2025-05-31 17:15:21,736 | INFO | Confusion matrix:
+[[722 269  59]
+ [200 685 166]
+ [ 68 164 819]]
+2025-05-31 17:15:21,746 | INFO | 
+NEG +weights: sad, sucks, not good, not happy, hate, sick, miss, fail, sorry, missing, worse, suck, boring, dont like, headache
+2025-05-31 17:15:21,747 | INFO | NEG -weights: awesome, love, thank, glad, nice, great, happy, thanks, hopefully, cute, hope, beautiful, good, amazing, excited
+2025-05-31 17:15:21,748 | INFO | 
+NEU +weights: bed good, miss her, feeling better, jst, though hope, replied, day was, love not, sick hope, the good, trail miss, night but, claires, news for, race
+2025-05-31 17:15:21,748 | INFO | NEU -weights: happy, good, thanks, enjoy, love, awesome, great, fail, sad, amazing, thank you, missing, stupid, sucks, sick
+2025-05-31 17:15:21,749 | INFO | 
+POS +weights: love, awesome, good, happy, great, thanks, nice, enjoy, amazing, excited, wonderful, cute, not bad, lovely, proud
+2025-05-31 17:15:21,749 | INFO | POS -weights: sad, sucks, not good, hate, shame, tired, jealous, miss, sick, missed, sorry, not happy, horrible, not, bad
+2025-05-31 17:15:21,850 | INFO | Model saved → baseline_model\logreg_tfidf.joblib

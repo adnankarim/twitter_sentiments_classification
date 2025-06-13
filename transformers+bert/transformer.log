@@ -1,0 +1,18 @@
+2025-05-31 21:11:04,801 | INFO | Validation  macro-F1 0.8010
+2025-05-31 21:11:04,802 | INFO | Test        macro-F1 0.7974
+2025-05-31 21:11:07,792 | INFO | 
+              precision    recall  f1-score   support
+
+         neg       0.79      0.85      0.82      1050
+         neu       0.75      0.71      0.73      1051
+         pos       0.85      0.84      0.84      1051
+
+    accuracy                           0.80      3152
+   macro avg       0.80      0.80      0.80      3152
+weighted avg       0.80      0.80      0.80      3152
+
+2025-05-31 21:11:07,796 | INFO | 
+Confusion
+[[893 133  24]
+ [180 743 128]
+ [ 58 113 880]]
